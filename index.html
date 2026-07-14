@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>☆★ MIKA's ROOM ★☆</title>
+
+<style>
+body{
+    margin:0;
+    font-family:"MS PGothic","ＭＳ Ｐゴシック",sans-serif;
+    background:#00194a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cg fill='%23ffffff22'%3E%3Ccircle cx='4' cy='4' r='1'/%3E%3Ccircle cx='20' cy='12' r='1'/%3E%3Ccircle cx='30' cy='35' r='1.2'/%3E%3Ccircle cx='10' cy='28' r='0.8'/%3E%3C/g%3E%3C/svg%3E");
+    color:white;
+    cursor:crosshair;
+}
+
+a{
+    color:#00ffff;
+    text-decoration:none;
+}
+a:hover{
+    color:yellow;
+    background:red;
+}
+
+#wrapper{
+    width:900px;
+    margin:auto;
+}
+
+.header{
+    margin-top:10px;
+    border:4px ridge #ff66ff;
+    background:linear-gradient(#000066,#330066);
+    text-align:center;
+    padding:10px;
+}
+
+.header h1{
+    color:#ffff66;
+    font-size:42px;
+    margin:5px;
+    text-shadow:3px 3px red;
+}
+
+marquee{
+    color:#00ff00;
+    font-weight:bold;
+}
+
+table.layout{
+    width:100%;
+    margin-top:10px;
+}
+
+.menu{
+    width:220px;
+    vertical-align:top;
+}
+
+.content{
+    vertical-align:top;
+    padding-left:10px;
+}
+
+.box{
+    border:3px ridge #99ffff;
+    background:#000033;
+    margin-bottom:10px;
+    padding:8px;
+}
+
+.box h2{
+    margin:0 0 5px;
+    font-size:18px;
+    color:#ff99ff;
+    border-bottom:1px dashed #ffffff;
+}
+
+button{
+    background:navy;
+    color:white;
+    border:2px outset silver;
+    font-family:inherit;
+}
+
+.profile td{
+    padding:2px 5px;
+}
+
+.counter{
+    font-size:28px;
+    color:#00ff00;
+    font-family:monospace;
+    text-align:center;
+    letter-spacing:3px;
+}
+
+.blink{
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:0;}
+}
+
+.banner{
+    text-align:center;
+    font-weight:bold;
+    background:linear-gradient(90deg,#ff00ff,#0000ff,#00ffff,#00ff00,#ffff00,#ff0000);
+    color:black;
+    padding:5px;
+}
+
+.footer{
+    margin:20px 0;
+    text-align:center;
+    font-size:12px;
+}
+
+.small{
+    font-size:12px;
+}
+
+hr{
+    border:1px dashed white;
+}
+
+textarea{
+    width:98%;
+    background:black;
+    color:#00ff00;
+    border:1px solid lime;
+    font-family:monospace;
+}
+
+.guest{
+    border-bottom:1px dotted gray;
+    margin-bottom:5px;
+    padding-bottom:5px;
+}
+
+.icon{
+    font-size:26px;
+}
+
+.menu a{
+    display:block;
+    padding:4px;
+    margin:3px 0;
+    background:#000055;
+    border:2px outset gray;
+}
+
+.menu a:hover{
+    background:#ff00aa;
+}
+
+.neko{
+    position:fixed;
+    left:-100px;
+    bottom:20px;
+    font-size:40px;
+    transition:1s;
+}
+</style>
+</head>
+
+<body>
+
+<div class="neko" id="neko">🐈</div>
+
+<div id="wrapper">
+
+<div class="header">
+<div class="blink">★★★ Internet Explorer 6 推奨 / 1024×768 ★★★</div>
+
+<h1>☆ MIKA'S OTAKU ROOM ☆</h1>
+
+<marquee scrollamount="5">
+ようこそ♪ キリ番GETしたらBBSで報告してください☆ 相互リンク募集中です♪
+</marquee>
+</div>
+
+<table class="layout">
+
+<tr>
+
+<td class="menu">
+
+<div class="box">
+
+<h2>MENU</h2>
+
+<a href="#">🏠 TOP</a>
+<a href="#">👤 PROFILE</a>
+<a href="#">🎨 GALLERY</a>
+<a href="#">🎵 FAVORITE</a>
+<a href="#">📖 DIARY</a>
+<a href="#">💬 BBS</a>
+<a href="#">🔗 LINK</a>
+
+</div>
+
+<div class="box">
+
+<h2>PROFILE</h2>
+
+<table class="profile">
+
+<tr><td>HN</td><td>美香☆</td></tr>
+<tr><td>趣味</td><td>アニメ・ゲーム・お絵描き</td></tr>
+<tr><td>好き</td><td>魔法少女・ロボット・RPG</td></tr>
+<tr><td>更新</td><td>気まぐれ♪</td></tr>
+
+</table>
+
+</div>
+
+<div class="box">
+
+<h2>VISITOR</h2>
+
+<div class="counter" id="counter">000001</div>
+
+<div class="small" align="center">
+あなたは<br>
+<span class="blink">キリ番狙ってね！</span>
+</div>
+
+</div>
+
+<div class="box">
+
+<h2>WEB RING</h2>
+
+<div align="center">
+
+← 前へ<br>
+● オタク同盟 ●<br>
+次へ →
+
+</div>
+
+</div>
+
+</td>
+
+<td class="content">
+
+<div class="banner">
+＼(≧▽≦)／ WELCOME!! ＼(≧▽≦)／
+</div>
+
+<div class="box">
+
+<h2>ごあいさつ</h2>
+
+<p>
+
+はじめまして♪
+このサイトはアニメ・ゲーム・イラストが好きな
+架空の管理人「美香☆」の個人サイトです！
+
+</p>
+
+<p>
+
+当サイトの画像・文章の無断転載は禁止です☆
+感想はぜひ掲示板へお願いします♪
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h2>更新履歴</h2>
+
+<b>2006/08/15</b>　TOPイラスト更新！<br>
+<b>2006/08/10</b>　プロフィール追加♪<br>
+<b>2006/08/01</b>　サイト開設しました☆
+
+</div>
+
+<div class="box">
+
+<h2>今日のひとこと</h2>
+
+<div id="message">
+「新作RPGクリアしました♪ ラスボス最高！！」
+</div>
+
+<br>
+
+<button onclick="changeMessage()">
+ひとこと更新
+</button>
+
+</div>
+
+<div class="box">
+
+<h2>掲示板（サンプル）</h2>
+
+<div class="guest">
+<b>ユウさん</b><br>
+サイトかわいいですね！また遊びにきます♪
+</div>
+
+<div class="guest">
+<b>レイさん</b><br>
+イラスト更新楽しみにしてます☆
+</div>
+
+<textarea rows="4" placeholder="ここに書き込み♪（デモなので保存されません）"></textarea>
+
+</div>
+
+<div class="box">
+
+<h2>お気に入りバナー</h2>
+
+<pre style="color:#00ffff;overflow:auto;">
++----------------------+
+|  ANIME FAN SITE!!    |
+|      88 x 31         |
++----------------------+
+
++----------------------+
+|   GAME LOVE WEB      |
+|      88 x 31         |
++----------------------+
+
++----------------------+
+|     OTAKU POWER      |
+|      88 x 31         |
++----------------------+
+</pre>
+
+</div>
+
+</td>
+
+</tr>
+
+</table>
+
+<div class="footer">
+
+<hr>
+
+<span class="icon">🌸</span>
+
+このサイトは架空の個人サイトです。<br>
+
+Copyright (C) 2006 MIKA All Rights Reserved.
+
+</div>
+
+</div>
+
+<script>
+
+let count = localStorage.getItem("retroCounter");
+
+if(!count){
+    count=1;
+}else{
+    count=parseInt(count)+1;
+}
+
+localStorage.setItem("retroCounter",count);
+
+document.getElementById("counter").textContent=
+String(count).padStart(6,"0");
+
+const msgs=[
+"今日はイベント帰りです♪",
+"積みゲーが増えてきました(笑)",
+"お気に入りの壁紙を変更しました☆",
+"新しいイラスト描いてます！",
+"BGMはずっとアニソンです♪",
+"深夜アニメ全部見たい…！"
+];
+
+function changeMessage(){
+    document.getElementById("message").innerHTML=
+    msgs[Math.floor(Math.random()*msgs.length)];
+}
+
+setTimeout(()=>{
+document.getElementById("neko").style.left="100%";
+},1000);
+
+</script>
+
+</body>
+</html>
